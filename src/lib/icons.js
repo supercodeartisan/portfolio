@@ -9,7 +9,7 @@ import {
   TbBox, TbDeviceMobile, TbBoxMultiple, TbPlugConnected, TbTerminal2, TbRepeat, TbShieldLock, TbBinaryTree,
 } from "react-icons/tb";
 import { FaFacebook, FaGithub, FaLinkedin, FaStackOverflow } from "react-icons/fa";
-import { FaHackerrank } from "react-icons/fa6";
+import { FaHackerrank, FaXTwitter } from "react-icons/fa6";
 import { MdOutlineEmail } from "react-icons/md";
 import { FiCalendar } from "react-icons/fi";
 
@@ -113,6 +113,7 @@ export const brandIcons = {
   FaLinkedin,
   FaHackerrank,
   FaStackOverflow,
+  FaXTwitter,
 };
 
 export const contactIcons = {
@@ -131,6 +132,8 @@ export const socialIconMap = {
   linkedin: FaLinkedin,
   hackerrank: FaHackerrank,
   stackoverflow: FaStackOverflow,
+  x: FaXTwitter,
+  twitter: FaXTwitter,
 };
 
 export { SiGithub, SiLeetcode, SiHackerrank, TbBrandOpenai };

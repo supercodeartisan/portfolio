@@ -64,7 +64,8 @@ export const statistics_labels = {
 
 export const social_profiles = [
   { id: 1, name: "LinkedIn", link: "https://www.linkedin.com/in/art-angelo-franco/", icon: "FaLinkedin" },
-  { id: 2, name: "Facebook", link: "https://www.facebook.com/profile.php?id=61591538357614", icon: "FaFacebook" },
+  { id: 2, name: "X", link: "https://x.com/ArtFrancoaw2g", icon: "FaXTwitter" },
+  { id: 3, name: "Facebook", link: "https://www.facebook.com/profile.php?id=61591538357614", icon: "FaFacebook" },
 ];
 
 export const about = {
