@@ -9,10 +9,16 @@ const T = "#f4f6f7";
 const P = "#9ca9b0";
 
 const SKILL_CATEGORY_LABELS = {
+  ai_agents: "AI Agents & Technical Reasoning",
+  llm_integration_rag: "LLM Integration & RAG",
+  ai_training_evaluation: "AI Training, Annotation & Evaluation",
   languages: "Languages",
   frontend: "Frontend",
   backend: "Backend",
+  database: "Database",
+  integration: "Integration / Enterprise Systems",
   cloud_devops: "Cloud & DevOps",
+  engineering: "Engineering Practices",
   ai_ml: "ML & AI",
   tools_platforms: "Tools & Platforms",
   cs_fundamentals: "CS Fundamentals",
@@ -28,7 +34,16 @@ const categoryList = Object.entries(skills)
   }));
 
 const SKILL_ICONS = {
+  "AI Agents & Technical Reasoning": TbBulb,
+  "LLM Integration & RAG": TbBulb,
+  "AI Training, Annotation & Evaluation": TbBulb,
   Languages: TbCode,
+  Frontend: TbDeviceDesktop,
+  Backend: TbStack2,
+  Database: TbDatabase,
+  "Integration / Enterprise Systems": TbTool,
+  "Cloud & DevOps": TbCloud,
+  "Engineering Practices": TbUsers,
   Frameworks: TbStack2,
   "Frameworks & Libraries": TbStack2,
   Databases: TbDatabase,
@@ -41,7 +56,16 @@ const SKILL_ICONS = {
 };
 
 const CATEGORY_ACCENTS = {
+  "AI Agents & Technical Reasoning": "#22d3ee",
+  "LLM Integration & RAG": "#38bdf8",
+  "AI Training, Annotation & Evaluation": "#60a5fa",
   Languages: "#38bdf8",
+  Frontend: "#60a5fa",
+  Backend: "#a78bfa",
+  Database: "#34d399",
+  "Integration / Enterprise Systems": "#f59e0b",
+  "Cloud & DevOps": "#a78bfa",
+  "Engineering Practices": "#fb7185",
   Frameworks: "#60a5fa",
   "Frameworks & Libraries": "#60a5fa",
   Databases: "#34d399",

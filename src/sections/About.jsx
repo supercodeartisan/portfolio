@@ -5,7 +5,7 @@ import {
   TbBriefcase, TbStar,
 } from "react-icons/tb";
 import PageSection from "../components/PageSection.jsx";
-import { about, profile, education, languages } from "../data/portfolio.js";
+import { about, profile, education } from "../data/portfolio.js";
 import { useResponsive, useInViewSimple } from "../lib/hooks.jsx";
 import { staggerContainer, fadeUpQuick, fadeLeft, fadeRight } from "../lib/variants.js";
 
@@ -201,7 +201,7 @@ const infoItems = [
 
 function InfoCard({ text, index, isMobile }) {
   const { Icon, color } = infoItems[index % infoItems.length];
-  const body = text.replace(/^[^\s]+\s/, ""); // strip leading emoji
+  const body = text.replace(/^[\p{Extended_Pictographic}\uFE0F\u200D]+\s*/u, "");
   return (
     <motion.div
       variants={fadeUpQuick}
@@ -246,7 +246,7 @@ function FactsGrid() {
       { Icon: TbMapPin, label: "Based in", value: profile.location },
       { Icon: TbUser, label: "Role", value: title },
       { Icon: TbSchool, label: "Education", value: `${edu}` },
-      { Icon: TbLanguage, label: "Languages", value: languages.map((l) => l.name).join(", ") },
+      { Icon: TbLanguage, label: "Languages", value: (profile.languages ?? []).map((l) => l.name).join(", ") },
     ];
   }, []);
 
@@ -284,7 +284,7 @@ function FactsGrid() {
 
 export default function About() {
   const { isMobile } = useResponsive();
-  const heading = about.greeting.replace(/^[^\s]+\s/, "");
+  const heading = about.greeting.replace(/^[\p{Extended_Pictographic}\uFE0F\u200D]+\s*/u, "");
 
   return (
     <PageSection id="about" title="About Me">
